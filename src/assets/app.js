@@ -1,15 +1,6 @@
-function saveVisit() {
-  const current = parseInt(localStorage.getItem("visits") ?? "0");
-  localStorage.setItem("visits", current + 1);
-
-  return current + 1;
-}
-
 function randomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
-
-const visits = saveVisit();
 
 const quotes = [
   '<a href="https://www.rickklaasboer.nl?recursion=true">To understand what recursion is, you must first understand recursion.</a>',
