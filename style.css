@@ -2,4 +2,22 @@
 
 @theme {
   --font-stack-sans-notch: "Stack Sans Notch", sans-serif;
+  --color-page-bg: oklch(99% 0.005 75);
+  --color-body: oklch(44% 0.02 75);
+  --color-body-lead: oklch(36% 0.015 75);
+  --color-link: oklch(15% 0.02 75);
+  --color-link-hover: oklch(44% 0.02 75);
+  --color-muted: oklch(68% 0.015 75);
+  --color-link-underline: oklch(75% 0.02 75);
+}
+
+body {
+  font-kerning: normal;
+  background-color: var(--color-page-bg);
+}
+
+a:focus-visible {
+  outline: 2px solid oklch(55% 0.025 75);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
